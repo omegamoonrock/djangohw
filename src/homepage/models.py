@@ -9,6 +9,7 @@ class blog(models.Model):
     context = models.TextField()
     after= models.DateTimeField()
     initial = models.DateTimeField()
+    checklist = models.BinaryField(default = 'False')
 
     def __unicode__(self):
         return self.title

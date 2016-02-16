@@ -1,4 +1,15 @@
 <body style = "background-color: pink">
 <h1> Hello </h1>
-<img src="{{chicken.png}}" alt="Chicken face">
+
+<img src="lecture2/src/my_assets/chicken.png" alt="Chicken face">
+
+<form method = 'POST' action = ''>{% csrf_token %}
+    {{ formvar.as_p }}
+<input type='submit' name='button1' value='save'/>
+</form>
+
+<h1> {{ variable1 }} </h1>
+<h1> {{ variable2 }} </h1>
+<h1> {{ variable3 }} </h1>
+
 </body>
